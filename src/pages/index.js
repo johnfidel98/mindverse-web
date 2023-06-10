@@ -26,7 +26,7 @@ const HomePage = () => {
           </p>
           <hr class="border-red-600 opacity-30" />
           <p class="mb-0 mt-4 text-gray-600">
-            N/B: This website partly handles account verification and recovery processes. The website project is open source and it's code is at <Link className='text-blue-800' href="https://github.com/">GitHub</Link>.
+            N/B: This website partly handles account verification and recovery processes. The website project is open source and it's code is at <Link className='text-blue-800' href="https://github.com/johnfidel98/mindverse-web">GitHub</Link>.
           </p>
         </div>
         <p className="text-gray-600 font-bold pb-8 lg:pb-6 lg:pt-10 text-center md:text-left fade-in">Download App</p>
