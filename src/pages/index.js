@@ -1,7 +1,9 @@
+import React, { useEffect, useRef } from 'react';
 import { Layout } from '../components/Layout';
 import Head from 'next/head';
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
+import lottie from 'lottie-web';
 
 const HomePage = () => {
   return (
@@ -41,10 +43,28 @@ const HomePage = () => {
         </div>
       </div>
       <div className="w-full xl:w-3/5 py-6 overflow-y-hidden hidden lg:block">
-        <Image src="/devices.svg" alt="Devices" width={600} height={400} className="w-5/6 mx-auto lg:mr-0 slide-in-bottom" />
+        <LottieAnimation />
       </div>
     </Layout>
   );
+};
+
+const LottieAnimation = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: containerRef.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: '/77862-chatting.json',
+    });
+
+    return () => anim.destroy();
+  }, []);
+
+  return <div className='w-5/6 mx-auto lg:mr-0 slide-in-bottom' ref={containerRef}></div>;
 };
 
 export default HomePage;
