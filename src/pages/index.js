@@ -40,6 +40,9 @@ const HomePage = () => {
           <Link href="https://appgallery.huawei.com/app/C108490715">
             <Image src="/Huawei AppGallery.png" alt="Huawei AppGallery" width={180} height={100} className="h-15 mt-3 bounce-top-icons" />
           </Link>
+          <Link href="https://drive.google.com/file/d/1BcW35QonFS_QuMltg36cfe2iJj2KvMwE/view?usp=sharing">
+            <Image src="/Google Drive.png" alt="Google Drive" width={160} height={75} className="h-15 ml-3 mt-3 bounce-top-icons" />
+          </Link> 
         </div>
       </div>
       <div className="w-full xl:w-3/5 py-6 overflow-y-hidden hidden lg:block">
