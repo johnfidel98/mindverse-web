@@ -37,7 +37,7 @@ const HomePage = () => {
           {/* <Link href="#">
             <Image src="/Play Store.svg" alt="Play Store" width={180} height={100} className="h-20 bounce-top-icons" />
           </Link> */}
-          <Link href="#">
+          <Link href="https://appgallery.huawei.com/app/C108490715">
             <Image src="/Huawei AppGallery.png" alt="Huawei AppGallery" width={180} height={100} className="h-15 mt-3 bounce-top-icons" />
           </Link>
         </div>
